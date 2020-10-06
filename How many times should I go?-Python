@@ -1,0 +1,9 @@
+# https://www.codewars.com/kata/57efcb78e77282f4790003d8/train/python
+# How many times should I go?
+
+import math
+def how_many_times(annual_price, individual_price):
+    return math.ceil(annual_price/individual_price)
+    
+def how_many_times(a, i):
+    return a/i if a/i%1==0 else a//i+1
