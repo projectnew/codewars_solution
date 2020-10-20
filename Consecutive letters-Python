@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/5ce6728c939bf80029988b57/train/python
+#Consecutive letters-Python
+
+def solve(st):
+    s = 'abcdefghijklmnopqrstuvwxyz'
+    return "".join(sorted(st)) in s
