@@ -1,0 +1,15 @@
+# https://www.codewars.com/kata/586d6cefbcc21eed7a001155/train/python
+# Character with longest consecutive repetition
+
+def longest_repetition(chars):
+    if chars =='':
+        return '',0
+    s = chars[0]
+    for i in range(1,len(chars)):
+        if s[-1]==chars[i]:
+            s+=chars[i]
+        else:
+            s += " "+ chars[i]
+    arr= s.split(" ")
+    lenghts = [len(el) for el in arr]
+    return arr[lenghts.index(max(lenghts))][0],max(lenghts)
